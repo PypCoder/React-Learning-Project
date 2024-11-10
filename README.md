@@ -17,6 +17,7 @@ Components are the building blocks of a React project. They allow us to split th
 Example Code:
 
 // src/Components/Navbar.js
+```javascript
 import React from 'react';
 
 function Navbar() {
@@ -28,12 +29,14 @@ function Navbar() {
 }
 
 export default Navbar;
+```
 2. Props
 Props (short for "properties") are values passed to components from their parent component. They function similarly to parameters in JavaScript functions, allowing data to be transferred and customized based on what’s passed in. Props can be accessed anywhere within the component, making them flexible and powerful for managing data between components.
 
 Example Code:
 
 // src/Components/Mood.js
+```javascript
 import React from 'react';
 
 function Mood({ mood }) { // mood is the prop
@@ -47,12 +50,15 @@ Usage:
 
 // In App.js
 <Mood mood="Happy" />
+```
+
 3. State
 State is the internal data of a component, representing its current condition or status. Unlike props, which are passed to the component, state is managed and updated within the component itself. State is essential for dynamic data and can change over time, such as text input in a text area. This project uses React’s useState hook to handle state changes within components.
 
 Example Code:
 
 // src/Components/TextArea.js
+```javascript
 import React, { useState } from 'react';
 
 function TextArea() {
@@ -68,12 +74,15 @@ function TextArea() {
 }
 
 export default TextArea;
+```
+
 4. Event Handling
 React provides an efficient way to handle events such as button clicks, form submissions, and other user actions. Event handlers in React are defined as functions and passed directly to the element as properties. This enables us to manage user interactions within the UI.
 
 Example Code:
 
 // src/Components/SubmitButton.js
+```javascript
 import React, { useState } from 'react';
 
 function SubmitButton() {
@@ -92,12 +101,15 @@ function SubmitButton() {
 }
 
 export default SubmitButton;
+```
+
 5. Conditional Rendering
 Conditional rendering in React allows components to display different content based on certain conditions, making the UI responsive and interactive. By using simple JavaScript conditions, we can decide which elements or components should be displayed based on the current state or props.
 
 Example Code:
 
 // src/Components/UserStatus.js
+```javascript
 import React, { useState } from 'react';
 
 function UserStatus() {
@@ -114,6 +126,8 @@ function UserStatus() {
 }
 
 export default UserStatus;
+```
+
 Summary
 This project demonstrates fundamental React concepts through a series of functional components. By understanding components, props, state, event handling, and conditional rendering, you’ll have a solid foundation to build more complex React applications.
 
