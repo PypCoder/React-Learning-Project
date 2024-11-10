@@ -16,8 +16,8 @@ Components are the building blocks of a React project. They allow us to split th
 
 Example Code:
 
-// src/Components/Navbar.js
 ```javascript
+// src/Components/Navbar.js
 import React from 'react';
 
 function Navbar() {
@@ -34,9 +34,8 @@ export default Navbar;
 Props (short for "properties") are values passed to components from their parent component. They function similarly to parameters in JavaScript functions, allowing data to be transferred and customized based on what’s passed in. Props can be accessed anywhere within the component, making them flexible and powerful for managing data between components.
 
 Example Code:
-
-// src/Components/Mood.js
 ```javascript
+// src/Components/Mood.js
 import React from 'react';
 
 function Mood({ mood }) { // mood is the prop
@@ -56,9 +55,8 @@ Usage:
 State is the internal data of a component, representing its current condition or status. Unlike props, which are passed to the component, state is managed and updated within the component itself. State is essential for dynamic data and can change over time, such as text input in a text area. This project uses React’s useState hook to handle state changes within components.
 
 Example Code:
-
-// src/Components/TextArea.js
 ```javascript
+// src/Components/TextArea.js
 import React, { useState } from 'react';
 
 function TextArea() {
@@ -80,9 +78,8 @@ export default TextArea;
 React provides an efficient way to handle events such as button clicks, form submissions, and other user actions. Event handlers in React are defined as functions and passed directly to the element as properties. This enables us to manage user interactions within the UI.
 
 Example Code:
-
-// src/Components/SubmitButton.js
 ```javascript
+// src/Components/SubmitButton.js
 import React, { useState } from 'react';
 
 function SubmitButton() {
@@ -107,9 +104,8 @@ export default SubmitButton;
 Conditional rendering in React allows components to display different content based on certain conditions, making the UI responsive and interactive. By using simple JavaScript conditions, we can decide which elements or components should be displayed based on the current state or props.
 
 Example Code:
-
-// src/Components/UserStatus.js
 ```javascript
+// src/Components/UserStatus.js
 import React, { useState } from 'react';
 
 function UserStatus() {
